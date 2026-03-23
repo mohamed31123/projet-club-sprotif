@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+
+<h2>Liste des Activités</h2>
+
+<form action="/activites" method="post">
+
+    Nom : <input type="text" name="nom">
+    Niveau : <input type="text" name="niveau">
+    Capacité : <input type="number" name="capacite">
+
+    <button type="submit">Ajouter</button>
+
+</form>
+
+<table border="1">
+
+    <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Niveau</th>
+        <th>Capacité</th>
+    </tr>
+
+    <tr th:each="a : ${activites}">
+        <td th:text="${a.id}"></td>
+        <td th:text="${a.nom}"></td>
+        <td th:text="${a.niveau}"></td>
+        <td th:text="${a.capacite}"></td>
+    </tr>
+
+</table>
+
+</body>
+</html>
