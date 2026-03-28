@@ -64,6 +64,12 @@ src/main/resources/
 
 ---
 
+## Video demo 
+
+
+https://github.com/user-attachments/assets/c3696b31-667b-4609-90dc-866d68e5c664
+
+
 ## 🚀 Lancement
 
 ### Prérequis
